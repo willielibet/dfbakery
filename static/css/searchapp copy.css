@@ -1,0 +1,37 @@
+.cake-item {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px; /* Add some space between the items */
+}
+
+.cake-image {
+    height: 300px; /* Set a fixed height for the images */
+    margin-left: 40px;
+    align-items: center;
+}
+
+.cake-title {
+    color: green; /* Style the title color as needed */
+    text-align: center;
+  
+}
+
+.search-results {
+    display: flex;
+     /* Optional: ensures the text color is not changed by the link */
+
+}
+
+.search-results a,
+.search-results a:visited,
+.search-results a:hover,
+.search-results a:active,
+.search-results a:focus {
+    text-decoration: none;
+}
+
+
+
+body {
+    padding-bottom: 50px; /* Adjust the value as needed */
+}

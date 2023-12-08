@@ -1,0 +1,68 @@
+body  {
+    background-color: #FAF9F6 !important;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.search-input, button {
+    /* Styling for your input and button */
+    margin: 5px; /* Optional: adds space between the input and the button */
+}
+
+
+.nvbar-text-color {
+    color: #f8f9fa !important; /* Replace with your desired color */
+    font-size: 30px !important;
+}
+
+.search-input {
+    font-size: 16px; /* Larger font size makes text easier to read */
+    padding: 10px; /* Padding inside the input field */
+    width: 500px; /* Width of the input field */
+    height: 40px; /* Height of the input field */
+    /* Add more styling as needed */
+}
+
+
+.search-button {
+    font-size: 20px; /* Larger font size */
+    padding: 10px 20px; /* Padding around the text */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    cursor: pointer; /* Changes the cursor on hover */
+    /* Add more styling as needed */
+}
+
+
+
+
+form.d-flex {
+    display: flex; /* Aligns children (input and button) in a row */
+    border: 2px solid #333; /* Border around the entire form */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form.d-flex .search-input {
+    flex-grow: 1; /* Allows input to take up available space */
+    border: none; /* Removes default border */
+        padding: 10px; /* Padding inside the input */
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+}
+
+form.d-flex button {
+    border: none; /* Removes default border */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right side */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form.d-flex button:hover {
+    background-color: #555; /* Darker background on hover */
+}

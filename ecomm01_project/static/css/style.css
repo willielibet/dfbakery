@@ -1,0 +1,16 @@
+.carousel-item {
+    position: relative;
+    /* Explicitly set the height of carousel items if needed */
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%; /* Adjust the height as needed */
+}
+
+.carousel-image {
+    max-width: 100%; /* Ensures the image is responsive and fits within the container */
+    height: auto; /* Keeps the aspect ratio of the image */
+}

@@ -1,0 +1,47 @@
+/* This is the container for all search results */
+.search-results {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Spacing between items */
+    padding: 20px; /* Padding around the entire search-results area */
+}
+
+/* Style for each individual search result item */
+.cake-item {
+    flex: 0 0 calc(25% - 20px); /* Four items per line, accounting for the gap */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Additional space between rows if needed */
+}
+
+/* Ensure the image and title within the .cake-item are also centered */
+.cake-item img,
+.cake-item .cake-title {
+    display: block; /* Replace with flex if additional alignment properties are needed */
+}
+
+/* Adjust the image size if necessary to fit four items per line */
+.cake-image {
+    width: 100%; /* or a fixed width, e.g., 200px */
+    height: 200px; /* set a fixed height */
+    object-fit: cover; /* This will cover the area without stretching the image */
+    object-position: center; /* Center the image within the element's box */
+    margin-left: 40px;
+}
+
+.cake-title {
+    display: flex;
+    color: green;
+    font-size: 20px;
+    align-content: center;
+    justify-content: center; /* Center the items vertically if there is space */
+    margin-left: 90px;
+   
+}
+
+/* Assuming .search-results a is already defined, add this to remove the underline */
+.search-results a {
+    text-decoration: none;
+}
+

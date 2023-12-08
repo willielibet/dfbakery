@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Picture Gallery{% endblock %}
+
+{% block content %}
+    <div class="container">
+            <div class="row g-3">
+                {% for picture in pictures %}
+
+                <div class="col-md-3 custom-top-space">
+                    <div class="card">
+                        <a href="{% url 'picture_description' picture.id %}" class="card-body">
+                        <img  src="{{ picture.image.url }}" class="card-body card-img-top img-fit" alt="{{ picture.title }}">
+                          <div class="card-body">
+                            <h5 class="card-title image-title">{{ picture.title }}<br>${{ picture.price }}</h5>
+                          </div>   
+                        </a>       
+                    </div>
+                </div>    
+
+                {% endfor %}       
+            </div>
+    </div>    
+{% endblock %}
+

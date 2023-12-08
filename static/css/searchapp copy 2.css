@@ -1,0 +1,47 @@
+/* This is the container for all search results */
+.search-results {
+    display: flex;
+    flex-direction: row; /* Stack the children vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically if there is space */
+    flex-wrap: wrap; /* Allow the items to wrap onto the next line */
+    gap: 20px; /* This adds space between the items, both horizontally and vertically */
+}
+
+.search-results-h2  {
+    display: flex;
+    flex-direction: row; /* Stack the children vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically if there is space */
+    
+}
+
+
+
+/* Style for each individual search result item */
+.cake-item {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Take full width to center the content inside it */
+    margin-bottom: 20px; /* Space between items */
+}
+
+.cake-image {
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.cake-title {
+    display: flex;
+    color: green;
+    align-content: center;
+    justify-content: center; /* Center the items vertically if there is space */
+    font-size: 20px;
+    
+}
+
+/* Assuming .search-results a is already defined, add this to remove the underline */
+.search-results a {
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+
+
+.text-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text content vertically */
+    align-items: flex-start; /* Align text content to the left */
+    height: 120px; /* Same height as images */
+    text-decoration: none; /* Removes underline */
+    color: inherit;       /* Optional: ensures the text color is not changed by the link */
+    font-size: 20px;
+}
+
+.text-contentp {
+    margin-top: 15px;
+    font-size: 30px;
+}
+.text-content h1,
+.text-contentp p {
+    margin: 0px; /* Remove default margins */
+
+}
+
+/* Optional: if you want the text to take up the remaining space */
+.text-content {
+    flex: 1;
+}
+
+/* Align titles horizontally */
+.text-content h3 {
+    white-space: nowrap; /* Prevent titles from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add an ellipsis for overflow */
+    max-width: 1000px; /* Adjust this value as needed */
+    color: blue;
+}
+
+.img-fiit {
+    width: 500px !important; /* This will make the image fill the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain !important; /* Cover the area, cropping if necessary */
+}
+
+.imgfit {
+    width: 500px !important; /* This will make the image fill the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-left: 40px; /* Adjust as needed */
+    object-fit: contain !important; /* Cover the area, cropping if necessary */
+}

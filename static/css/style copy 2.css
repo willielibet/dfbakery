@@ -1,0 +1,41 @@
+.card .img-fit {
+    /* aspect-ratio: 16 / 9; */
+    object-fit: contain;
+}
+
+.card {
+    /* display: flex; */
+    height: 320px;
+    /* flex-direction: column; */
+}
+
+.card-body {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+
+    text-decoration: none; /* Removes underline */
+    color: inherit;       /* Optional: ensures the text color is not changed by the link */
+}
+
+.card-text {
+    /* flex: 1; */
+    flex-grow: 1;
+}
+
+@media (max-width: 767.98px) {
+    .card .img-fit {
+        aspect-ratio: 1.45 / 1;
+        object-fit: cover;
+    }
+}
+
+
+.custom-top-space {
+    margin-top: 10%  !important;  /* Change 20px to whatever value you need */
+}
+
+.image-title {
+    text-align: center;
+  }
+  

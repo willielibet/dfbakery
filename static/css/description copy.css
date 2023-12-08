@@ -1,0 +1,52 @@
+.container {
+    margin-top: 10px; /* get some blank space from the top of the browser*/
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+}
+
+.container img {
+    display: block; /* Remove any default inline spacing */
+    width: 100%; /* Force all images to be the same width */
+    max-width: 100px; /* Adjust this value as needed */
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Crop images to fill the space */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.text-content {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text content vertically */
+    align-items: flex-start; /* Align text content to the left */
+    height: 100px; /* Same height as images */
+    text-decoration: none; /* Removes underline */
+    color: inherit;       /* Optional: ensures the text color is not changed by the link */
+}
+
+.text-content h1,
+.text-content p {
+    margin: 0px; /* Remove default margins */
+
+}
+
+/* Optional: if you want the text to take up the remaining space */
+.text-content {
+    flex: 1;
+}
+
+/* Align titles horizontally */
+.text-content h1 {
+    white-space: nowrap; /* Prevent titles from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add an ellipsis for overflow */
+    max-width: 200px; /* Adjust this value as needed */
+}
+
+.img-fiit {
+    width: 200px !important; /* This will make the image fill the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain !important; /* Cover the area, cropping if necessary */
+}
+ 

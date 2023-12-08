@@ -1,0 +1,29 @@
+<!-- descriptions/description.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Picture Description{% endblock %}
+<!-- {% load static %} should be inherited from base.html - revise that -->
+{% load static %}
+
+{% block extra_css %}
+    <link href="{% static 'css/description.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        
+        <img src="{{ picture.image.url }}" alt="{{ picture.title }}" class=" imgfit">
+
+        <div class="text-content">
+            <h3>{{ picture.title }}</h3>
+        
+     
+            <p>{{ picture.description }}</p>
+            <!-- Add more details about your picture here -->
+      
+    </div>
+        
+      
+    </div>
+{% endblock %}

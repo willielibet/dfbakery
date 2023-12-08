@@ -1,0 +1,63 @@
+body  {
+    background-color: green;
+}
+
+.card {
+    /* display: flex; */
+    height: auto;
+    /* flex-direction: column; */
+}
+
+.card-body {
+    /* Adjust the card body to allow for text below the image */
+    /* ... other styles ... */
+    display: flex;
+    height: 500px;
+    
+    flex-direction: column;
+
+    text-decoration: none; /* Removes underline */
+    color: inherit;       /* Optional: ensures the text color is not changed by the link */
+}
+
+.card-text {
+    /* flex: 1; */
+    flex-grow: 1;
+}
+
+@media (max-width: 767.98px) {
+    .card-img {
+        height: auto; /* Adjust for smaller screens */
+    }
+    .imgfit {
+        object-fit: cover;
+    }
+}
+
+
+.custom-top-space {
+    margin-top: 15%  !important;  /* Change 20px to whatever value you need */
+}
+
+.image-title {
+    text-align: center;
+  }
+
+.imgfit {
+    width: 700px !important; /* This will make the image fill the width of its container */
+    height: 400px; /* Maintain aspect ratio */
+    object-fit: contain !important; /* Cover the area, cropping if necessary */
+    justify-content: flex-end;
+}
+ 
+.card-img {
+    height: 1700px !important; /* Adjust this height to fit your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body {
+    padding-bottom: 50px; /* Adjust the value as needed */
+}
